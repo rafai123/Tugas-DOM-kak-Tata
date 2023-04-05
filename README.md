@@ -73,18 +73,52 @@ jawaban tertera pada file [Section4-6.html](https://github.com/rafai123/Tugas-DO
 **Penjelasan ada pada comment pada kode berikut : **
 
 ``` html
- <script>
-    // input nilai awal ke variabel nilai awal
-    let nilaiAwal = 0
-    
-    // lakukan perulangan sebanyak 10
-    for (let i = 1; i <=10; i++ ) {
-        // setiap perulangan nilai awal di tambah 2
-        nilaiAwal += 2;
-        // menampilkan perulangan dan total nilai awal
-        console.log(`perulangan ke ${i} \nnilai awal = ${nilaiAwal}`)
-    }
-</script>
+ <body>
+    <div id="container"></div>
+    <script>
+      // Menangkap div#container
+      let container = document.getElementById("container");
+
+      // Section 4 (Manipulating Elements)
+      // Minimal 3 contoh
+
+      // createElement()
+      let paragraph = document.createElement("p");
+      let input = document.createElement("input");
+
+      // InnerHTML
+      paragraph.innerHTML = "Ini inner HTML di dalam element yang dibuat dengan createElement";
+
+      // appentChild()
+      container.appendChild(paragraph);
+      container.appendChild(input);
+
+      // Section 5 (Working with Attributes)
+      // setAttribute
+      input.setAttribute("name", "test");
+      input.setAttribute("value", "Ini adalah value yang dibuat degan setAtribute()");
+
+      // getAttribute
+      let atributGet = input.getAttribute("value");
+      // Menampilkan isi value dari getAttribute()
+      console.log(atributGet);
+      // hasAttribute
+      // Melakukan pengecekan apabila memiliki atribut "value", maka true. jika tidak maka false
+      input.hasAttribute("value") ? console.log(true) : console.log(false);
+
+      
+      // Section 6 (Manipulating Element's Style)
+      // style property
+      paragraph.style.color = "tomato"; //Mengubah warna huruf jadi warna Tomato
+
+      //   getComputedStyle()
+      let computedStyle = getComputedStyle(paragraph);
+      console.log(computedStyle.color); //Menampilkan computed style warna huruf dari paragraph ke console
+
+      // Classlist Property
+      console.log(input.classList); //menampilkan classlist input ke console.log
+    </script>
+  </body>
 ```
 
 
