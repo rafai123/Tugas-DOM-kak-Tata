@@ -39,8 +39,17 @@
       // Melakukan pengecekan apabila memiliki atribut "value", maka true. jika tidak maka false
       input.hasAttribute("value") ? console.log(true) : console.log(false);
 
+      
       // Section 6 (Manipulating Element's Style)
-    //   
+      // style property
+      paragraph.style.color = "tomato"; //Mengubah warna huruf jadi warna Tomato
+
+      //   getComputedStyle()
+      let computedStyle = getComputedStyle(paragraph);
+      console.log(computedStyle.color); //Menampilkan computed style warna huruf dari paragraph ke console
+
+      // Classlist Property
+      console.log(input.classList); //menampilkan classlist input ke console.log
     </script>
   </body>
 </html>
