@@ -124,24 +124,30 @@ jawaban tertera pada file [Section4-6.html](https://github.com/rafai123/Tugas-DO
 
 ## Jawaban Nomor 3
 ### Soal :
-3.  Lakukan pengulangan dengan FOR LOOP yang melakukan iterasi dari 0..20.
-- Setiap iterasi/pengulangan lakukan pengecekan apakah nilai tersebut ganjil atau genap.
-- Tampilkan keterangan ganjil dan genap pada sebuah nilai setiap pengulangan
-
+3.  Section 7-8 : Masing masing minimal 2 contoh dengan 2 usecase
 
 ### Jawaban :
-jawaban tertera pada file [Jawaban Nomor 3.html](https://github.com/rafai123/tugas-js_dasar-masTata/blob/main/Jawaban%20Nomor%203.html "Github Rafai")
+jawaban tertera pada file [Section7-8.html](https://github.com/rafai123/Tugas-DOM-kak-Tata/blob/main/section7-8.html "Github Rafai")
 
 **Penjelasan ada pada comment pada kode berikut : **
 
+#### Usecase 1 :
+
 ``` html
- <script>
-    // lakukan perulangan sebanyak 20
-    for (let i = 1; i <= 20; i++) {
-      // setiap perulangan melakukan pengecekan apakah perulangan ganjil atau genap lalu menampilkan nya
-      i % 2 == 0 ? console.log(`Perulangan Ke ${i} adalah genap`) : console.log(`Perulangan Ke ${i} adalah ganjil`);
-    }
-  </script>
+ <body>
+    <!-- Section 7 (Working with Events) -->
+    <!-- HTML Event Handles attributes -->
+    <!-- Usecase Menampilkan allert ketika tombol di klik -->
+    <button onclick="alert('Tombol ini Telah di klik')">Alert</button> <!--Menampilkan alert() melalui html hamdles secara langsung -->
+    <button onclick="tombolAlert()">Alert dengan Function</button> <!-- Ketika tombol di klik, memunculkan function tombolAlert()-->
+
+
+    <script>
+        // Section 7, Ini adalah function alert yang di panggil melalui atribut onclick
+        const tombolAlert = () => {
+            alert("Tombol dengan function tombolAlert() ini telah di klik")
+        }
+    </script>
 ```
 
 
